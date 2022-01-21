@@ -8,9 +8,9 @@ import javafx.scene.control.TextField;
 
 public class ChatController {
     @FXML
-    private TextField answerFiled;
-    @FXML
     private TextArea tipArea;
+    @FXML
+    private TextField answerFiled;
 
     public void onClickCheckButton(ActionEvent actionEvent) {
         final String answer = answerFiled.getText();
