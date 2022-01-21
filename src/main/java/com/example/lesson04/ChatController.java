@@ -1,0 +1,21 @@
+package com.example.lesson04;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+
+public class ChatController {
+    @FXML
+    private TextArea tipArea;
+    @FXML
+    private TextField answerFiled;
+
+    public void onClickCheckButton(ActionEvent actionEvent) {
+        final String answer = answerFiled.getText();
+        if (!answer.isEmpty() && answer != null)
+            tipArea.appendText(answer + "\n");
+        answerFiled.clear();
+    }
+}
